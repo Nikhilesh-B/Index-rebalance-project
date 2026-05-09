@@ -1,6 +1,12 @@
-*.csv
-*.parquet
-*.json
-*.log
-*.h5
-*.xlsx
+# ── Proprietary Bloomberg inputs (do not share) ──────────────────────────────
+data/raw/
+
+# ── Derived from proprietary data (too large / not shareable) ─────────────────
+data/processed/FINALIZED_PRICES.parquet
+
+# ── General cruft ─────────────────────────────────────────────────────────────
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+~$*
